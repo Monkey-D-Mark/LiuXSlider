@@ -1,4 +1,4 @@
-# usage of MFFontSettingView <br>
+# Usage of MFFontSettingView <br>
 ```#import "MFFontSettingView.h" ```
 ```
     __weak typeof(self) weakSelf = self;
