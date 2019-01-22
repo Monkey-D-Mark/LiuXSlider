@@ -1,3 +1,17 @@
+# usage of MFSlider
+```#import "MFSlider.h" ```
+    __weak typeof(self) weakSelf = self;
+    MFFontSettingView *settingView = [[MFFontSettingView alloc] initWithFrame:self.view.bounds];
+    settingView.fontSizeSlider.valueChangedBlock = ^(int index) {
+        NSInteger size = index + 1;
+        [weakSelf.webView stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"n_callback_wordsize('%ld')", (long)(size)]];
+    };
+    [[UIApplication sharedApplication].keyWindow addSubview:settingView];
+
+
+
+
+
 # LiuXSlider
 ##一款自定义的滑杆(Slider)。可以自定义滑块，滑杆颜色，默认颜色等。<br>
 
