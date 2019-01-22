@@ -1,4 +1,4 @@
-# usage of MFSlider
+# usage of MFSlider <br>
 ```#import "MFSlider.h" ```
     __weak typeof(self) weakSelf = self;
     MFFontSettingView *settingView = [[MFFontSettingView alloc] initWithFrame:self.view.bounds];
